@@ -7,7 +7,7 @@ provider "azurerm"{
 }
 
 module "module1" {
-source = "./storageAccount"
+source = "../storageAccount"
 resource_name = "account31245678567"
 location = "westus"
 resource_group_name ="test34"
