@@ -6,8 +6,8 @@ provider "azurerm"{
     subscription_id = "a38f6e33-2b42-4d94-ab1a-d8aaa0afb87f"
 }
 
-module "module1" {
-source = "../../storageAccount/main.tf"
+module "StorageAccount" {
+source = "./StorageAccount/"
 resource_name = "account31245678567"
 location = "westus"
 resource_group_name ="test34"
