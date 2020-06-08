@@ -1,3 +1,5 @@
+variable "client_id"
+variable "client_secret"
 provider "azurerm"{
    version     = "~>1.38.0"
     client_id   = var.client_id
