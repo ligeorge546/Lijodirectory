@@ -8,10 +8,16 @@ provider "azurerm"{
     subscription_id = "aa487c88-6c1b-449f-8cd0-43f8c066a086"
 }
 
+resource "azurerm_resource_group" "demo" {
+   name = "demo"
+   location = "West US"
+}
+
 module "StorageAccount" {
 source = "./StorageAccount/"
-resource_name = "account546834563"
+resource_name = "demo31245678567"
 location = "westus"
-resource_group_name ="test"
+resource_group_name ="demo"
+
 #tags ="demo"
 }
