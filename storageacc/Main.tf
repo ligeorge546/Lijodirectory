@@ -15,8 +15,8 @@ resource "azurerm_resource_group" "demo" {
 
 module "StorageAccount" {
 source = "./StorageAccount/"
-resource_name = "account31245678567"
+resource_name = "demo31245678567"
 location = "westus"
-resource_group_name ="test"
+resource_group_name ="demo"
 #tags ="demo"
 }
